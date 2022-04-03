@@ -11,7 +11,7 @@ const Dashboard = () => {
             <ChartBar></ChartBar>
             <h2>Month Wish Sell Sell</h2>
             <ChartLine></ChartLine>
-   
+    
             <h2>Invesment VS Revanue</h2>
             <ChartPie></ChartPie>
             
