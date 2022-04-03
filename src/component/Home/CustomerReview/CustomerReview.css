@@ -1,0 +1,15 @@
+.review {
+    box-shadow: 0 0 15px gray;
+    padding: 10px;
+    border-radius: 10px;
+    margin: 30px;
+}
+.review p{
+    text-align: justify;
+}
+.review h3 {
+    margin: 0;
+}
+.review small {
+    color: grey;
+}

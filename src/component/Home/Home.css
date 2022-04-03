@@ -1,0 +1,51 @@
+@import url('https://fonts.googleapis.com/css2?family=Coming+Soon&family=Hind+Siliguri:wght@500&family=Orbitron&family=Poppins:wght@500&display=swap');
+body {
+    font-family: 'Poppins', sans-serif;
+}
+.home{
+    margin: 10px;
+    padding: 10px;
+    display: grid;
+    grid-template-columns: 3fr 2fr;
+    justify-content: space-between;
+    align-items: center;
+}
+.mobilePhoneImge {
+    padding-left: 10px;
+    margin: 10px;
+    width: 100%;
+}
+.mobilePhoneImge img{
+    border-radius: 10px;
+
+}
+.home .title h1{
+    font-size: 50px;
+    color: black;
+    font-weight: bold;
+}
+.home .title h2{
+    font-size: 40px;
+    color: blue;
+    font-weight: bolder;
+}
+.home .title p{
+    text-align: justify;
+    font-size: 18px;
+}
+.home .title button{
+    border:  none;
+    background-color: rgb(250, 181, 51);
+    color: white;
+    font-size: 25px;
+    border-radius: 10px;
+}
+
+.home .title button:hover {
+    background-color: orange;
+    color: white;
+}
+.reviews{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+}
