@@ -1,12 +1,12 @@
 import { useEffect, useState } from "react"
 
-const useReview = () => {
-    const [review, setReview] = useState([])
+const useJson= (json) => {
+    const [jsonLoad, setJson] = useState([])
     useEffect(()=>{
-        fetch("/JSON/reviews.json")
+        fetch(`/JSON/${json}.json`)
         .then(res=>res.json())
-        .then(data=>setReview(data))
-    },[])
-    return review;
+        .then(data=>setJson(data))
+    },[json])
+    return jsonLoad;
 }
-export default useReview;
+export default useJson;

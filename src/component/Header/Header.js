@@ -5,8 +5,8 @@ const Header = () => {
     return (
         <header>
             <div className='link'>
-                <Link to='/home'>Home</Link>{' '}
-                <Link to='/reviews'>Reviews</Link>{' '}
+                <Link to='/home'>Home</Link>{'     '}
+                <Link to='/reviews'>Reviews</Link>{'   '}
                 <Link to='/dashboard'>Dashboard</Link>{' '}
                 <Link to='/blogs'>Blogs</Link>{' '}
             </div>

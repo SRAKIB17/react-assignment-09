@@ -1,10 +1,12 @@
 import React from 'react';
-import useReview from '../../hooks/useReview';
+import { useNavigate } from 'react-router-dom';
+import useJson from '../../hooks/useReview';
+
 import CustomerReview from './CustomerReview/CustomerReview';
 import './Home.css'
 const Home = () => {
-    const review = useReview().slice(0, 3)
-
+    const review = useJson('reviews').slice(0, 3)
+    const navg = useNavigate()
     return (
         <main>
             <section className='home'>
@@ -34,6 +36,9 @@ const Home = () => {
 
                         review.map(review => <CustomerReview review={review}></CustomerReview>)
                     }
+                </div>
+                <div className='seeAll' >
+                    <button onClick={() => navg('/reviews')}>See All Review</button>
                 </div>
 
             </section>

@@ -33,7 +33,7 @@ body {
     text-align: justify;
     font-size: 18px;
 }
-.home .title button{
+.home .title button ,button{
     border:  none;
     background-color: rgb(250, 181, 51);
     color: white;
@@ -48,4 +48,10 @@ body {
 .reviews{
     display: grid;
     grid-template-columns: repeat(3, 1fr);
+}
+.seeAll{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 10px;
 }
