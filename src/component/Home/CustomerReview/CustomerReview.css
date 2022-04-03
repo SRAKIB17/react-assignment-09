@@ -13,3 +13,19 @@
 .review small {
     color: grey;
 }
+.Profile{
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+}
+.Profile div{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 40px;
+    height: 40px;
+    background-color: rgb(211, 219, 219);
+    border-radius: 50%;
+    color: rgb(80, 73, 73);
+    
+}
