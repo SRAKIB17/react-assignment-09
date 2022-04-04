@@ -5,27 +5,25 @@ import useJson from '../../hooks/useReview';
 import CustomerReview from './CustomerReview/CustomerReview';
 import './Home.css'
 const Home = () => {
-    const review = useJson('reviews').slice(0, 3)
+    const review = useJson('reviews');
     const navg = useNavigate()
     return (
         <main>
             <section className='home'>
                 <section className="title">
                     <h1 className=''>
-                        Samsung Galaxy S22 Ultra.
+                        Buy MSI MODERN 15
                     </h1>
                     <h2>
-                        The best Samsung phone you can buy.
+                        Heepy Coding
                     </h2>
                     <p>
-                        Which Samsung has the best camera?
-                        Image result for samsung best titee
-                        Overall, the best Samsung phone right now is the Samsung Galaxy S22 Ultra, with fantastic cameras and top build quality. It is expensive though, so if you don't want to spend that much, we recommend the Samsung Galaxy S20 FE, which the one of best camera phones despite being a very affordable price.
+                        MSI, MSI gaming, dragon, and dragon shield names and logos, as well as any other MSI service or product names or logos displayed on the MSI website, are registered trademarks or trademarks of MSI.
                     </p>
                     <button>Live Demo</button>
                 </section>
                 <section className='mobilePhoneImge'>
-                    <img src="https://cdn.mos.cms.futurecdn.net/3MrxJrq63Vr37anmdLUhgR-1024-80.jpg.webp" alt="" className='img-fluid' />
+                    <img src="https://asset.msi.com/resize/image/global/product/product_16237438867fec807cead14d092124f3dc67ddc3ef.png62405b38c58fe0f07fcef2367d8a9ba1/1024.png" alt="" className='img-fluid' />
                 </section>
 
             </section>
@@ -34,7 +32,7 @@ const Home = () => {
                 <div className='reviews'>
                     {
 
-                        review.map(review => <CustomerReview review={review}></CustomerReview>)
+                        review.slice(0, 3).map(review => <CustomerReview review={review}></CustomerReview>)
                     }
                 </div>
                 <div className='seeAll' >

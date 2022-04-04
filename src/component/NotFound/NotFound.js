@@ -3,7 +3,7 @@ import './NotFound.css'
 const NotFound = () => {
     return (
         <div className='NotFound'>
-            <h1>NOT FOUND</h1>
+            <h1>404 NOT FOUND</h1>
             <img src="http://rakib17.hexat.com/icon/busy.gif" alt="" />
         </div>
     );
